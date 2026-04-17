@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;    
+}
+
+.header-nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.logo img{
+    width: 200px; 
+}
+
+.ul-nav {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    list-style: none;   
+}
+
+.nav-btn { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;  
+}
+
+.resume-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    color: #000; 
+}
+
+.profile-btn {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.profile-btn img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+      
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+
+.section-head{
+    display: flex;
+    width: 55%;
+    gap: 10px;
+    margin-top: 50px;
+    border-bottom: #e4e4e4 solid 1px;
+    padding-bottom: 10px;
+    
+}
+
+.header-btn {
+    text-decoration: none;
+    color:#000;
+}
+
+.main-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;  
+}
+
+.main-content{
+    width: 55%; 
+    margin-top: 30px;  
+}
+
+.main-aside{
+    width: 40%;
+    padding-left: 20px;
+}
+
+.aside-wrapper {
+    display: flex;
+    gap: 20px;
+    border-left: #e4e4e4 solid 1px;
+}
