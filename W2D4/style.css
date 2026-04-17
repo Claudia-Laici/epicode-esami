@@ -73,40 +73,114 @@ body{
     font-size: 1.5rem;
 }
 
-
 .section-head{
     display: flex;
-    width: 55%;
+    width: 95%;
     gap: 10px;
     margin-top: 50px;
-    border-bottom: #e4e4e4 solid 1px;
-    padding-bottom: 10px;
-    
+    border-bottom: #e4e4e4 solid 1px;   
 }
 
 .header-btn {
     text-decoration: none;
-    color:#000;
+    color:#7e7e7e;
 }
 
-.main-layout{
+.section-head .recommended-btn{
+    color: #000;
+    border-bottom: #000 solid 1px;
+    padding-bottom: 10px;
+}
+
+.page-layout{
     display: flex;
-    justify-content: space-between;
     align-items: stretch;  
 }
 
+.left-column{
+    width: 70%;
+}
+
 .main-content{
-    width: 55%; 
+    width: 100%; 
     margin-top: 30px;  
 }
 
-.main-aside{
-    width: 40%;
-    padding-left: 20px;
+.right-column{
+    width: 30%;
+    display: flex;
 }
 
-.aside-wrapper {
+.aside-wrapper{
+    border-left: 1px solid #e4e4e4;
+    flex-shrink: 0;
+}
+
+.main-aside{
+    max-width: 60%;
+    margin: 40px auto 0;
+    padding: 10px 20px;
+}
+
+.logo-container {
     display: flex;
-    gap: 20px;
-    border-left: #e4e4e4 solid 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section img {
+  width: 40px;
+}
+
+.icon-aside{
+    font-size: 1.1rem;
+    color:#929292;
+}
+
+.main-aside p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.connect-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.connect-section img{
+    width: 25px;
+}
+
+.connect-btn {
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid #000;
+    display:flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-items: baseline;
+    gap:10px;
+    background-color: #fff;
+    font-size: 1rem;;
+}
+
+.connect-link{
+    width: 120%;
+    text-align: center;
+    font-size: 1.1rem;
+    color:#929292;
+    margin-top: 25px;
+    padding-bottom: 30px;
+    border-bottom: #e4e4e4 solid 1px;
 }
