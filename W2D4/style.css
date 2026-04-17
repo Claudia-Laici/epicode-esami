@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -14,20 +14,20 @@ body{
     margin: 0 auto;    
 }
 
-.header-nav .container{
+.header-nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-nav{
+.header-nav {
     width: 100%;
     margin: auto;
     padding: 15px;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
-.logo img{
+.logo img {
     width: 200px; 
 }
 
@@ -52,7 +52,7 @@ body{
     font-size: 1rem;
     padding: 8px 15px;
     border-radius: 20px;
-    border: 1px solid #000;
+    border: 1px solid #797979;;
     color: #000; 
 }
 
@@ -62,7 +62,7 @@ body{
   justify-content:center;
 }
 
-.profile-btn img{
+.profile-btn img {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -71,9 +71,10 @@ body{
 
 .icon {
     font-size: 1.5rem;
+    color:#797979;
 }
 
-.section-head{
+.section-head {
     display: flex;
     width: 95%;
     gap: 10px;
@@ -86,49 +87,44 @@ body{
     color:#7e7e7e;
 }
 
-.section-head .recommended-btn{
+.section-head .recommended-btn {
     color: #000;
     border-bottom: #000 solid 1px;
     padding-bottom: 10px;
 }
 
-.page-layout{
+.page-layout {
     display: flex;
     align-items: stretch;  
 }
 
-.left-column{
-    width: 70%;
+.left-column {
+    width: 75%;
 }
 
-.main-content{
+.main-content {
     width: 100%; 
     margin-top: 30px;  
 }
 
-.right-column{
-    width: 30%;
+.right-column {
+    width: 25%;
     display: flex;
 }
 
-.aside-wrapper{
+.aside-wrapper {
     border-left: 1px solid #e4e4e4;
-    flex-shrink: 0;
 }
 
-.main-aside{
-    max-width: 60%;
-    margin: 40px auto 0;
-    padding: 10px 20px;
+.main-aside {
+    width: 70%;
+    margin: 40px auto;
+    padding-left: 50px;
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo-section {
+.logo-container,
+.logo-section,
+.connect-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,11 +145,7 @@ body{
 }
 
 .connect-section {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 10px;
 }
 
@@ -162,21 +154,22 @@ body{
 }
 
 .connect-btn {
-    padding: 10px 30px;
+    padding: 8px 30px;
     text-decoration: none;
     border-radius: 30px;
-    border: 1px solid #000;
+    border: 1px solid #9d9d9d;
     display:flex;
     justify-content: center;
     white-space: nowrap;
     align-items: baseline;
     gap:10px;
     background-color: #fff;
-    font-size: 1rem;;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 .connect-link{
-    width: 120%;
+    width: 425px;
     text-align: center;
     font-size: 1.1rem;
     color:#929292;
