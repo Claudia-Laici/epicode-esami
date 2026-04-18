@@ -22,22 +22,22 @@
                 <div class="nav-right">
                     <ul class="ul-nav">
                         <li class="li-nav">
-                            <button class="nav-btn">
+                            <button class="nav-btn" aria-label="search">
                                 <ion-icon name="search-outline" class="icon"></ion-icon>
                             </button>
                         </li>
                         <li class="li-nav">
-                            <button class="nav-btn">
+                            <button class="nav-btn" aria-label="bookmark">
                                 <ion-icon name="bookmark-outline" class="icon"></ion-icon>
                             </button>
                         </li>
                         <li class="li-nav">
-                            <button class="nav-btn">
+                            <button class="nav-btn" aria-label="notification">
                                 <ion-icon name="notifications-outline" class="icon"></ion-icon>
                             </button>
                         </li>
                         <li class="li-nav">
-                            <a href="#" class="resume-btn" aria-label="Resume membership">
+                            <a href="#" class="resume-btn" aria-label="resume membership">
                                 Resume membership
                             </a>
                         </li>
@@ -58,11 +58,11 @@
             <div class="page-layout">
                 <div class="left-column">
                     <div class="section-head">
-                        <a href="#" class="header-btn" aria-label="Go to users followed">
-                            <h2>FOLLOWING</h2>
+                        <a href="#" class="header-btn">
+                            FOLLOWING
                         </a>
-                        <a href="#" class="header-btn recommended-btn" aria-label="Go to recommended for you">
-                            <h1>RECOMMENDED FOR YOU</h1>
+                        <a href="#" class="header-btn recommended-btn">
+                            RECOMMENDED FOR YOU
                         </a>
 
                     </div>
@@ -71,7 +71,7 @@
                             <div class="article-1">
                                 <div class="profile-section">
                                     <img src="./assets/female.webp" alt="profile image">
-                                    <p>Kolby Sisk in Udacity Eng & Data</p>
+                                    <p>Kolby Sisk in Udacity Eng &amp; Data</p>
                                 </div>
                                 <h2>React state management in 2022- Return of the Redux</h2>
                                 <p>At the beginning of the year if you told me I'd be publishing a recommendation to use
@@ -104,12 +104,10 @@
                             <div class="logo-container">
                                 <div class="logo-section">
                                     <img src="./assets/medium-icon.webp" alt="logo medium">
-                                </div>
-                                <div class="logo-section">
+
                                     <ion-icon name="add-outline" class="icon-aside"></ion-icon>
-                                </div>
-                                <div class="logo-section">
-                                    <img src="./assets/Logo_of_Twitter.webp" alt="logo twitter">
+
+                                    <img class="twitter-logo" src="./assets/Logo_of_Twitter.webp" alt="logo twitter">
                                 </div>
                             </div>
                             <p>Discover Medium writers you already follow on Twitter</p>
@@ -147,11 +145,11 @@
 
                                 <div class="follow-section">
                                     <div class="user-box">
-                                    <img src="./assets/female.webp" alt="profile image">
-                                    <div class="profile-info">
-                                        <h2>Lessig</h2>
-                                        <p>law professor,activist.</p>
-                                    </div>
+                                        <img src="./assets/female.webp" alt="profile image">
+                                        <div class="profile-info">
+                                            <h2>Lessig</h2>
+                                            <p>law professor,activist.</p>
+                                        </div>
                                     </div>
                                     <button class="follow-btn">Follow</button>
                                 </div>
@@ -167,48 +165,76 @@
                                 </div>
                                 <div class="follow-section">
                                     <div class="user-box">
-                                    <img src="./assets/female.webp" alt="profile image">
-                                    <div class="profile-info">
-                                        <h2>Bonsu Thompson</h2>
-                                        <p>Bonsu Thompson is a writer, producer, Brooklynite and 2019...</p>
-                                    </div>
+                                        <img src="./assets/female.webp" alt="profile image">
+                                        <div class="profile-info">
+                                            <h2>Bonsu Thompson</h2>
+                                            <p>Bonsu Thompson is a writer, producer, Brooklynite and 2019...</p>
+                                        </div>
                                     </div>
                                     <button class="follow-btn">Follow</button>
                                 </div>
 
                             </section>
 
-                             <section class="aside-section">
+                            <section class="aside-section">
                                 <h2>Recently saved</h2>
 
-                                <div class="article-section">
-                                    <div class="header-article">
-                                        <img src="./assets/female.webp" alt="profile image">
-                                        <div class="profile-info">
-                                            <span>Eva Keiffenheim in Age of Awareness</span>
-                                        </div>
-                                        <div class="saved-article">
-                                            <h2>The Feynman Technique Will Make You Remember What You Read</h2>
-                                        </div>
-                                        <div class="date-article">
-                                        <span>Oct 27,2020</span> <span>·</span>
+                                <article class="saved-article">
+                                    <div class="saved-author">
+                                        <img src="./assets/profile.jpg" alt="profile image">
+                                        <p>Eva Keiffenheim <span>in</span> Age of Awareness</p>
+                                    </div>
+
+                                    <h3 class="saved-title">
+                                        The Feynman Technique Will Make You Remember What You Read
+                                    </h3>
+
+                                    <div class="saved-meta">
+                                        <span>Oct 2, 2020</span>
+                                        <span>·</span>
+                                        <span>6 min read</span>
+                                        <span><ion-icon name="star-sharp"></ion-icon></span>
+                                    </div>
+                                </article>
+
+                                <article class="saved-article">
+                                    <div class="saved-author">
+                                        <img src="./assets/female.webp" alt="profile">
+                                        <p>chrissy teigen</p>
+                                    </div>
+
+                                    <h3 class="saved-title">Hi.</h3>
+
+                                    <div class="saved-meta">
+                                        <span>Oct 27, 2020</span>
+                                        <span>·</span>
                                         <span>8 min read</span>
+                                    </div>
+                                </article>
+
+                                <section class="link-section">
+                                    <div class="link-top">
+                                        <a href="#" class="see-all">See all (3)</a>
+                                    </div>
+                                    <div class="link-bottom">
+                                        <div class="grid-five">
+                                            <a href="#">Help</a>
+                                            <a href="#">Status</a>
+                                            <a href="#">Writers</a>
+                                            <a href="#">Blog</a>
+                                            <a href="#">Careers</a>
+                                        </div>
+                                        <div class="grid-three">
+                                            <a href="#">Privacy</a>
+                                            <a href="#">Terms</a>
+                                            <a href="#">About</a>
                                         </div>
                                     </div>
-                                    <article class="profile-article">
-                                        <img src="./assets/female.webp" alt="profile"/>
-                                     </article>
-                                        
-                                    </div>   
-
-
-                                </div>
-
+                                </section>
                             </section>
                         </aside>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>
@@ -218,8 +244,9 @@
             <p>&copy; 2023 Medium. All rights reserved.</p>
             <a href="https://www.flaticon.com/free-icons/profile-image" title="profile image icons">Profile image icons
                 created by Loka Design - Flaticon</a>
+        </div>
     </footer>
-    </div>
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
