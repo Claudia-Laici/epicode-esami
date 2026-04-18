@@ -154,7 +154,7 @@ body {
 }
 
 .connect-section {
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
@@ -274,7 +274,7 @@ body {
   cursor: pointer;
 }
 
-.saved-article { 
+.saved-article {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -367,7 +367,7 @@ body {
 }
 
 .article-author {
- display: flex;
+  display: flex;
   align-items: center;
   gap: 10px;
 }
@@ -391,10 +391,10 @@ body {
   align-items: center;
   font-size: 0.9rem;
   color: #7e7e7e;
-   margin-top: auto;
+  margin-top: auto;
 }
 
-.tag-info{
+.tag-info {
   padding: 5px 10px;
   border-radius: 20px;
   background-color: #f2f2f2;
@@ -403,7 +403,7 @@ body {
   text-align: center;
 }
 
-.container-btn{
+.container-btn {
   display: flex;
   justify-content: space-around;
   align-items: center;
