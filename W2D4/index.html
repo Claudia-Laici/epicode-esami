@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Medium</title>
 </head>
@@ -64,37 +66,228 @@
                         <a href="#" class="header-btn recommended-btn">
                             RECOMMENDED FOR YOU
                         </a>
-
                     </div>
+
                     <section class="main-content">
-                        <article>
-                            <div class="article-1">
-                                <div class="profile-section">
-                                    <img src="./assets/female.webp" alt="profile image">
+                        <article class="article-container">
+                            <div class="author-info">
+                                <div class="article-author">
+                                    <img class="square-img" src="./assets/profile.jpg" alt="profile image">
                                     <p>Kolby Sisk in Udacity Eng &amp; Data</p>
                                 </div>
-                                <h2>React state management in 2022- Return of the Redux</h2>
-                                <p>At the beginning of the year if you told me I'd be publishing a recommendation to use
+
+                                <h2 class="article-title">React state management in 2022—Return of the <br>Redux</h2>
+
+                                <p class="article-text">At the beginning of the year if you told me I'd be publishing a <br>
+                                    recommendation to use
                                     Redux I would
                                     have laughed in your face. Yet her...</p>
-                                <div class="section-info">
-                                    <span>Dec 3</span>
-                                    <span>4 min read</span>
-                                    <a href="#" class="tag-info">React</a>
-                                    <span>Popular on Medium</span>
-                                    <button class="section-button">
-                                        <ion-icon name="bookmark-outline"></ion-icon>
-                                    </button>
-                                    <button class="section-button">
-                                        <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
-                                    </button>
+                                <div class="section-meta">
+                                    <div class="container-meta">
+                                        <span>Dec 3</span>
+                                        <span>·</span>
+                                        <span>4 min read</span>
+                                        <span>·</span>
+                                        <a href="#" class="tag-info">React</a>
+                                        <span>·</span>
+                                        <span>Popular on Medium</span>
+                                    </div>
+                                    <div class="container-btn">
+                                        <button class="section-btn">
+                                            <ion-icon name="bookmark-outline"></ion-icon>
+                                        </button>
+                                        <button class="section-btn">
+                                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="image-article">
                                 <img src="./assets/Image_article_1.webp"
-                                    alt="Image next to the article with dark green background and three male faces at the top. In the center two crossed lightsabers, under stylized symbols similar to technological logos. Left partial text in English: “State Management Return of the Redux Episode (Lost Count)”.">
+                                    alt="Graphic thumbnail with faces of three people, Redux and React logos, and text “State Management: Return of the Redux” on a green spatial background.">
                             </div>
                         </article>
+
+                        <article class="article-container">
+                            <div class="author-info">
+                                <div class="article-author">
+                                    <img src="./assets/female.webp" alt="profile image">
+                                    <p>Navoda Nilaskshi</p>
+                                </div>
+
+                                <h2 class="article-title">How To Sanitize Your Express App Against <br> MongoDB Injection &amp; Cross-Site Scripting.</h2>
+
+                                <p class="article-text">Easiest way to sanitize your express app.</p>
+                                <div class="section-meta">
+                                    <div class="container-meta">
+                                        <span>Dec 19</span>
+                                        <span>·</span>
+                                        <span>6 min read</span>
+                                        <span>·</span>
+                                        <a href="#" class="tag-info">Web Development</a>
+                                        <span>·</span>
+                                        <span>Based on your reading history</span>
+                                    </div>
+                                    <div class="container-btn">
+                                        <button class="section-btn">
+                                            <ion-icon name="bookmark-outline"></ion-icon>
+                                        </button>
+                                        <button class="section-btn">
+                                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-article">
+                                <img src="./assets/Image_article_2.webp"
+                                    alt="Minimal illustration of a syringe filled with orange liquid on a light background.">
+                            </div>
+                        </article>
+
+                        <article class="article-container">
+                            <div class="author-info">
+                                <div class="article-author">
+                                    <img class="square-img" src="./assets/profile.jpg" alt="profile image">
+                                    <p>Divyesh Bhalani <span>in</span> DhiWiseS</p>
+                                </div>
+
+                                <h2 class="article-title">React 18 new features and updates</h2>
+
+                                <p class="article-text">Know about some cool features and updates of React 18</p>
+                                <div class="section-meta">
+                                    <div class="container-meta">
+                                        <span>Nov 24</span>
+                                        <span>·</span>
+                                        <span>4 min read</span>
+                                        <span>·</span>
+                                        <a href="#" class="tag-info">Reactjs</a>
+                                        <span>·</span>
+                                        <span>Popular on Medium</span>
+                                    </div>
+                                    <div class="container-btn">
+                                        <button class="section-btn">
+                                            <ion-icon name="bookmark-outline"></ion-icon>
+                                        </button>
+                                        <button class="section-btn">
+                                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-article">
+                                <img src="./assets/Image_article_3.webp"
+                                    alt="Laptop illustration with React 18 written on the screen, next to the plant and lamp.">
+                            </div>
+                        </article>
+
+                        <article class="article-container">
+                            <div class="author-info">
+                                <div class="article-author">
+                                    <img src="./assets/female.webp" alt="profile image">
+                                    <p>Vsevolod Ulyanovich <span>in</span> Fively Blog</p>
+                                </div>
+
+                                <h2 class="article-title">15 Best Web App Ideas for a Startup in 2021</h2>
+
+                                <p class="article-text">15 Startup Ideas and Technologies That Could Make You a Millionaire</p>
+                                <div class="section-meta">
+                                    <div class="container-meta">
+                                        <span>Oct 29</span>
+                                        <span>·</span>
+                                        <span>6 min read</span>
+                                        <span>·</span>
+                                        <a href="#" class="tag-info">Web Development</a>
+                                        <span>·</span>
+                                        <span>Popular on Medium</span>
+                                    </div>
+                                    <div class="container-btn">
+                                        <button class="section-btn">
+                                            <ion-icon name="bookmark-outline"></ion-icon>
+                                        </button>
+                                        <button class="section-btn">
+                                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-article">
+                                <img src="./assets/Image_article_4.webp"
+                                    alt="Two people sitting outside while collaborating while looking at a laptop.">
+                            </div>
+                        </article>
+
+                        <article class="article-container">
+                            <div class="author-info">
+                                <div class="article-author">
+                                    <img class="square-img" src="./assets/profile.jpg" alt="profile image">
+                                    <p>Kolby Sisk <span>in</span> Udacity Eng &amp; Data</p>
+                                </div>
+
+                                <h2 class="article-title">Understanding re-rendering and memoization in <br>React</h2>
+
+                                <p class="article-text">The following are quick tips to increase performance in your React <br>application by understanding re-rendering and memoization. To better...</p>
+                                <div class="section-meta">
+                                    <div class="container-meta">
+                                        <span>Dec 6</span>
+                                        <span>·</span>
+                                        <span>4 min read</span>
+                                        <span>·</span>
+                                        <a href="#" class="tag-info">React</a>
+                                        <span>·</span>
+                                        <span>Popular on Medium</span>
+                                    </div>
+                                    <div class="container-btn">
+                                        <button class="section-btn">
+                                            <ion-icon name="bookmark-outline"></ion-icon>
+                                        </button>
+                                        <button class="section-btn">
+                                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-article">
+                                <img src="./assets/Image_article_5.webp"
+                                    alt="Futuristic illustration of a purple light structure suspended in an abstract technological environment.">
+                            </div>
+                        </article>
+                        
+                        <article class="article-container">
+                            <div class="author-info">
+                                <div class="article-author">
+                                    <img class="square-img" src="./assets/profile.jpg" alt="profile image">
+                                    <p>Arun Kashyap <span>in</span> Nerd For Tech</p>
+                                </div>
+
+                                <h2 class="article-title">Why Get Rid Of PromisesTo Fetch Data In React?</h2>
+
+                                <p class="article-text">How You Can Make Your Code Well Structured !!</p>
+                                <div class="section-meta">
+                                    <div class="container-meta">
+                                        <span>Jul 5</span>
+                                        <span>·</span>
+                                        <span>5 min read</span>
+                                        <span>·</span>
+                                        <a href="#" class="tag-info">React</a>
+                                        <span>·</span>
+                                        <span>Selected for you</span>
+                                    </div>
+                                    <div class="container-btn">
+                                        <button class="section-btn">
+                                            <ion-icon name="bookmark-outline"></ion-icon>
+                                        </button>
+                                        <button class="section-btn">
+                                            <ion-icon name="ellipsis-horizontal-sharp"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-article">
+                                <img src="./assets/Image_article_6.webp"
+                                    alt="Close-up screen with lines of colored source code on a blurred background.">
+                            </div>
+                        </article>
+
                     </section>
                 </div>
 
@@ -121,7 +314,7 @@
                         </aside>
                         <aside class="main-aside">
                             <section class="aside-section">
-                                <h2>Recommended topics</h2>
+                                <h3>Recommended topics</h3>
 
                                 <div class="topics-row three">
                                     <a href="#" class="tag">Technology</a>
@@ -141,13 +334,13 @@
                             </section>
 
                             <section class="aside-section">
-                                <h2>Who to follow</h2>
+                                <h3>Who to follow</h3>
 
                                 <div class="follow-section">
                                     <div class="user-box">
                                         <img src="./assets/female.webp" alt="profile image">
                                         <div class="profile-info">
-                                            <h2>Lessig</h2>
+                                            <h4>Lessig</h4>
                                             <p>law professor,activist.</p>
                                         </div>
                                     </div>
@@ -157,7 +350,7 @@
                                     <div class="user-box">
                                         <img src="./assets/female.webp" alt="profile image">
                                         <div class="profile-info">
-                                            <h2>David Wineberg</h2>
+                                            <h4>David Wineberg</h4>
                                             <p>Author, The Straight Dope, or What I learned from my first...</p>
                                         </div>
                                     </div>
@@ -167,7 +360,7 @@
                                     <div class="user-box">
                                         <img src="./assets/female.webp" alt="profile image">
                                         <div class="profile-info">
-                                            <h2>Bonsu Thompson</h2>
+                                            <h4>Bonsu Thompson</h4>
                                             <p>Bonsu Thompson is a writer, producer, Brooklynite and 2019...</p>
                                         </div>
                                     </div>
@@ -177,7 +370,7 @@
                             </section>
 
                             <section class="aside-section">
-                                <h2>Recently saved</h2>
+                                <h3>Recently saved</h3>
 
                                 <article class="saved-article">
                                     <div class="saved-author">
@@ -185,9 +378,9 @@
                                         <p>Eva Keiffenheim <span>in</span> Age of Awareness</p>
                                     </div>
 
-                                    <h3 class="saved-title">
+                                    <h4 class="saved-title">
                                         The Feynman Technique Will Make You Remember What You Read
-                                    </h3>
+                                    </h4>
 
                                     <div class="saved-meta">
                                         <span>Oct 2, 2020</span>
@@ -203,7 +396,7 @@
                                         <p>chrissy teigen</p>
                                     </div>
 
-                                    <h3 class="saved-title">Hi.</h3>
+                                    <h4 class="saved-title">Hi.</h4>
 
                                     <div class="saved-meta">
                                         <span>Oct 27, 2020</span>
@@ -212,25 +405,25 @@
                                     </div>
                                 </article>
 
-                                <section class="link-section">
+                                <nav class="link-section" aria-label="Secondary links">
                                     <div class="link-top">
                                         <a href="#" class="see-all">See all (3)</a>
                                     </div>
                                     <div class="link-bottom">
-                                        <div class="grid-five">
-                                            <a href="#">Help</a>
-                                            <a href="#">Status</a>
-                                            <a href="#">Writers</a>
-                                            <a href="#">Blog</a>
-                                            <a href="#">Careers</a>
-                                        </div>
-                                        <div class="grid-three">
-                                            <a href="#">Privacy</a>
-                                            <a href="#">Terms</a>
-                                            <a href="#">About</a>
-                                        </div>
+                                        <ul class="grid-five">
+                                            <li><a href="#">Help</a></li>
+                                            <li><a href="#">Status</a></li>
+                                            <li><a href="#">Writers</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                        </ul>
+                                        <ul class="grid-three">
+                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">Terms</a></li>
+                                            <li><a href="#">About</a></li>
+                                        </ul>
                                     </div>
-                                </section>
+                                </nav>
                             </section>
                         </aside>
                     </div>
@@ -240,10 +433,27 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 Medium. All rights reserved.</p>
+        <div class="footer-container">
+            <nav class="link-section" aria-label="Footer links">
+                                    <div class="link-bottom">
+                                        <ul class="link-footer">
+                                            <li><a href="#">Help</a></li>
+                                            <li><a href="#">Status</a></li>
+                                            <li><a href="#">About</a></li>
+                                            <li><a href="#">Careers</a></li>
+                                            <li><a href="#">Press</a></li>
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                            <li><a href="#">Rules</a></li>
+                                             <li><a href="#">Terms</a></li>
+                                              <li><a href="#">Text to speech</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+            <div class="attribution">
             <a href="https://www.flaticon.com/free-icons/profile-image" title="profile image icons">Profile image icons
                 created by Loka Design - Flaticon</a>
+            </div>
         </div>
     </footer>
 
