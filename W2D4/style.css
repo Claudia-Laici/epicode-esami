@@ -124,7 +124,7 @@ body {
   height: 100%;
 }
 
-.main-aside {
+.header-aside {
   width: 75%;
   margin: 40px auto;
   padding-left: 50px;
@@ -147,7 +147,7 @@ body {
   color: #929292;
 }
 
-.main-aside p {
+.header-aside p {
   margin-top: 10px;
   text-align: center;
 }
@@ -185,7 +185,7 @@ body {
   border-bottom: #e4e4e4 solid 1px;
 }
 
-.topics-section {
+.main-aside {
   margin-left: 70px;
 }
 
@@ -212,10 +212,61 @@ body {
   text-align: center;
 }
 
-.topics-section h2 {
+.aside-section h2 {
   margin-top: 50px;
   margin-bottom: 20px;
   color: #262626;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.follow-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.user-box {
+  display: flex;
+  align-items: initial;
+  gap: 12px;
+}
+
+.user-box img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5px;
+}
+
+.profile-info h2 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.profile-info p {
+  width: 240px;
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+  color: #7e7e7e;
+}
+
+.follow-btn {
+  padding: 8px 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  border: 1px solid #525252;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
 }
