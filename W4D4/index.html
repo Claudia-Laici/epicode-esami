@@ -8,6 +8,21 @@
 <body>
     <main>
 
+        <form id="myForm">
+
+            <label for="location">Città</label>
+            <input type="text" id="location" placeholder="es. Milano, US, London…" />
+
+            <label for="title">Posizione lavorativa</label>
+            <input type="text" id="title" placeholder="es. Java Developer, Web Dev…" />
+
+            <button type="submit" class="btn">Cerca offerte</button>
+        </form>
+        <div>
+            <p class="resultsLabel" id="resultsLabel"></p>
+            <ul id="results"></ul>
+        </div>
+
     </main>
     
      <script src="script.js"></script>
