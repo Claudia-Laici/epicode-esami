@@ -13,36 +13,39 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg m-2">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/Netflix_Logo_RGB.png" width="100" class="d-inline-block align-text-top me-2"
+                    <img src="./assets/Netflix_Logo_RGB.png" width="130" class="d-inline-block align-text-top me-2"
                         alt="Netflix">
                 </a>
 
-                <div class="d-flex align-items-center ms-auto gap-2 d-lg-none">
+                <div class="d-flex align-items-center ms-auto gap-3 d-lg-none">
                     <a class="nav-link text-light" href="#"><i class="bi bi-search"></i></a>
                     <a class="nav-link" href="#"><i class="bi bi-bell-fill text-light"></i></a>
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <img src="./assets/rabbit.png" width="40" alt="account icon">
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/rabbit.png" width="40" alt="Profile avatar">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div id="menu-dropdown" class="d-lg-none" role="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" tabindex="0">
+
+                    <span></span>
+
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav gap-2">
 
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Home</a>
@@ -61,9 +64,11 @@
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav ms-auto align-items-center d-none d-lg-flex">
+                    <ul class="navbar-nav ms-auto align-items-center d-none d-lg-flex gap-2">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#"><i class="bi bi-search"></i></a>
+                            <a class="nav-link text-light" href="#" aria-label="Search">
+                                <i class="bi bi-search"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light text-uppercase" href="#">Kids</a>
@@ -74,7 +79,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./assets/rabbit.png" width="50" class="d-inline-block" alt="account icon">
+                                <img src="./assets/rabbit.png" width="50" class="d-inline-block" alt="Profile avatar">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -86,13 +91,14 @@
                 </div>
             </div>
         </nav>
+
     </header>
 
     <main>
-        <section id="header-choice">
-            <div class="container-fluid mt-4">
+        <section id="header-choice" class="m-3">
+            <div class="container-fluid mt-4 px-3">
                 <div class="d-flex align-items-center gap-5">
-                    <h1 class="text-light">Tv Shows</h1>
+                    <h1 class="text-light">TV Shows</h1>
                     <div class="dropdown">
                         <button
                             class="btn btn-secondary dropdown-toggle bg-black rounded-0 d-flex align-items-center justify-content-between"
@@ -102,28 +108,325 @@
                         <ul class="dropdown-menu rounded-0">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Horror</a></li>
-                            <li><a class="dropdown-item" href="#">Commedy</a></li>
+                            <li><a class="dropdown-item" href="#">Comedy</a></li>
                         </ul>
                     </div>
 
-                    <div class="d-flex align-items-center text-light ms-auto">
-                        <div class="border border-light pe-4 ps-4 pb-2 pt-2">
-                           <i class="bi bi-text-left"></i>
-                        </div>
-                        <div class="border border-light pe-4 ps-4 pb-2 pt-2">
+                    <div class="d-none d-md-flex align-items-center text-light ms-auto">
+                        <button type="button" class="border border-light bg-transparent text-light px-4 py-2"
+                            aria-label="List view">
+                            <i class="bi bi-text-left"></i>
+                        </button>
+
+                        <button type="button" class="border border-light bg-transparent text-light px-4 py-2"
+                            aria-label="Grid view">
                             <i class="bi bi-grid-fill"></i>
-                        </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-layout animation-on-scroll m-3">
+            <h2 class="text-light mb-3 mt-3 px-3 fs-4">Trending Now</h2>
+            <div class="container-fluid px-3">
+                <div class="row g-1 flex-nowrap row-netflix">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/2.png" class="img-fluid movie-card" alt="After Life">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/1.png" class="img-fluid movie-card" alt="Unorthodox">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/12.png" class="img-fluid movie-card" alt="La Casa De Flores">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/3.png" class="img-fluid movie-card" alt="Vis A Vis">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/4.png" class="img-fluid movie-card" alt="The Place">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/5.png" class="img-fluid movie-card" alt="Summertime">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/6.png" class="img-fluid movie-card" alt="I Delitti di Valhalla">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-layout animation-on-scroll m-3 mt-5">
+            <h2 class="text-light mb-3 mt-3 px-3 fs-4">Watch It Again</h2>
+            <div class="container-fluid px-3">
+                <div class="row g-1 flex-nowrap row-netflix">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/4.png" class="img-fluid movie-card" alt="The Place">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/5.png" class="img-fluid movie-card" alt="Summertime">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/6.png" class="img-fluid movie-card" alt="I Delitti Di Valhalla">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/7.png" class="img-fluid movie-card" alt="L'altra Grace">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/8.png" class="img-fluid movie-card" alt="Virgin River">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/9.png" class="img-fluid movie-card" alt="The English Game">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/10.png" class="img-fluid movie-card" alt="Il Metodo Kominsky">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-layout animation-on-scroll m-3 mt-5">
+            <h2 class="text-light mb-3 mt-3 px-3 fs-4">New Releases</h2>
+            <div class="container-fluid px-3">
+                <div class="row g-1 flex-nowrap row-netflix">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/11.png" class="img-fluid movie-card" alt="Patto d'amore">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/12.png" class="img-fluid movie-card" alt="La Casa De Las Flores">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/13.png" class="img-fluid movie-card" alt="Collateral Beauty">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/14.png" class="img-fluid movie-card" alt="Self-Made">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/17.png" class="img-fluid movie-card" alt="Lasciati Andare">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/16.png" class="img-fluid movie-card" alt="Grace and Frankie">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/15.png" class="img-fluid movie-card" alt="Freud">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-layout animation-on-scroll m-3 mt-5">
+            <h2 class="text-light mb-3 mt-3 px-3 fs-4">Netflix Originals</h2>
+            <div class="container-fluid px-3">
+                <div class="row g-1 flex-nowrap row-netflix">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/18.png" class="img-fluid movie-card" alt="Dogman">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/1.png" class="img-fluid movie-card" alt="Unorthodox">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/4.png" class="img-fluid movie-card" alt="The Place">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/2.png" class="img-fluid movie-card" alt="After Life">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/9.png" class="img-fluid movie-card" alt="The English Game">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/14.png" class="img-fluid movie-card" alt="Self-Made">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/7.png" class="img-fluid movie-card" alt="L'altra Grace">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-layout animation-on-scroll m-3 mt-5">
+            <h2 class="text-light mb-3 mt-3 px-3 fs-4">Because You Watched</h2>
+            <div class="container-fluid px-3">
+                <div class="row g-1 flex-nowrap row-netflix">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/5.png" class="img-fluid movie-card" alt="Summertime">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/8.png" class="img-fluid movie-card" alt="Virgin River">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/7.png" class="img-fluid movie-card" alt="L'altra Grace">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/9.png" class="img-fluid movie-card" alt="The English Game">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/11.png" class="img-fluid movie-card" alt="Patto D'Amore">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/15.png" class="img-fluid movie-card" alt="Freud">
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./assets/movies/17.png" class="img-fluid movie-card" alt="Lasciati Andare">
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer-netflix">
+
+        <div class="container">
+            <div class="mx-auto" style="max-width: 900px;">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="social-icon fs-3 d-flex gap-4 mb-2">
+                            <a class="text-secondary" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a class="text-secondary" href="#" aria-label="Instagram"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a class="text-secondary" href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a class="text-secondary" href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row link-footer g-5 mb-2">
+                    <div class="col-6 col-md-3">
+                        <ul class="list-unstyled pt-2">
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Audio and
+                                    Subtitles</a>
+                            </li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Media Center</a>
+                            </li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Privacy</a></li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <ul class="list-unstyled pt-2">
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Audio
+                                    Description</a>
+                            </li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Investor
+                                    Relations</a>
+                            </li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Legal Notices</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <ul class="list-unstyled pt-2">
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Help Center</a>
+                            </li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Jobs</a></li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Cookie
+                                    Preferences</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <ul class="list-unstyled pt-2">
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Gift Cards</a></li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Terms of Use</a>
+                            </li>
+                            <li class="pb-2"><a class="text-secondary text-decoration-none" href="#">Corporate
+                                    Information</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-1">
+                        <button type="button" class="border border-secondary bg-transparent text-secondary p-2">
+                            Service Code
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <p class="text-secondary">© 1997-2019 Netflix, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
 
 </body>
 
